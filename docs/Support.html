@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IFC Federator Support</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #07111f;
+      color: #f4f8ff;
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 22px;
+    }
+    .card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(120,220,255,0.22);
+      border-radius: 22px;
+      padding: 28px;
+      margin: 22px 0;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    }
+    h1, h2 {
+      margin-top: 0;
+      color: #9feaff;
+    }
+    a {
+      color: #73e8ff;
+    }
+    code {
+      background: rgba(255,255,255,0.08);
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+    ul {
+      padding-left: 22px;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>IFC Federator Support</h1>
+
+```
+<div class="card">
+  <h2>About IFC Federator</h2>
+  <p>
+    IFC Federator is a BIM coordination utility for importing multiple IFC models,
+    reviewing them together in a federated viewer, and exporting a source-preserving
+    combined IFC file.
+  </p>
+  <p>
+    The app is designed for IFC coordination workflows across architecture,
+    structure, MEP, civils and other discipline models.
+  </p>
+</div>
+
+<div class="card">
+  <h2>Core Features</h2>
+  <ul>
+    <li>Import multiple IFC files.</li>
+    <li>Preview models together in a federated 3D view.</li>
+    <li>Track loaded, visible and hidden models.</li>
+    <li>Use Fit All and Fit Selected to navigate the federation.</li>
+    <li>Toggle model visibility.</li>
+    <li>Export multiple same-schema IFCs as one combined IFC file.</li>
+    <li>Generate a secondary CSV coordination report.</li>
+    <li>Use the AI Coordination Assistant for plain-English guidance based on app-generated model facts.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>How Combined IFC Export Works</h2>
+  <p>
+    IFC Federator creates a source-preserving combined IFC file. It keeps source geometry,
+    placements, GUIDs, properties and relationships as far as possible, while safely
+    renumbering STEP entity labels to avoid collisions between source files.
+  </p>
+  <p>
+    For V1, the app requires compatible IFC schemas for export. Mixed-schema exports,
+    such as combining IFC2X3 and IFC4, are blocked with a user-facing message.
+  </p>
+</div>
+
+<div class="card">
+  <h2>Troubleshooting</h2>
+  <h3>My models do not appear aligned</h3>
+  <p>
+    IFC Federator preserves the source IFC placements. It does not automatically rewrite
+    coordinates or remodel storeys. If models are far apart, check project coordinates,
+    shared origin, units and authoring/export settings in the source BIM tools.
+  </p>
+
+  <h3>Export is not available</h3>
+  <p>
+    Combined IFC export requires at least two successfully imported, same-schema IFC files.
+    If one file is invalid or uses a different schema, the app will explain the issue.
+  </p>
+
+  <h3>The viewer looks empty</h3>
+  <p>
+    Use <strong>Fit All</strong> or select a model and use <strong>Fit Selected</strong>.
+    Very large coordinate systems can require camera refitting.
+  </p>
+</div>
+
+<div class="card">
+  <h2>Contact Support</h2>
+  <p>
+    For help, bug reports or feedback, email:
+    <a href="mailto:jamiepward@googlemail.com">jamiepward@googlemail.com</a>
+  </p>
+  <p>
+    Please include your device type, iOS/iPadOS/macOS version, app version, and a short
+    description of the issue. Do not send confidential project models unless you are
+    comfortable sharing them.
+  </p>
+</div>
+
+<div class="card">
+  <h2>Privacy</h2>
+  <p>
+    IFC Federator is designed to work locally with files selected by the user. For details,
+    please see the app privacy policy.
+  </p>
+</div>
+```
+
+  </main>
+</body>
+</html>
